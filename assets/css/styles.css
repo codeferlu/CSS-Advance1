@@ -4,15 +4,29 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+.containertodo {
+    display:flex;
+    max-width: 100vw;
+}
 .sidebar {
     height: 100vh;
-    max-width: 470px;
+    max-width: 500px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     gap: 30px;
     
 }
+
+.container1 {
+    display:flex;
+    
+}
+
+.texto {
+    padding: 15px;
+}
+
 .contenedor_profile {
     height: 150px;
     padding-left: 40px;
@@ -20,6 +34,7 @@
     display: flex;
     gap: 30px;
     border: 2px groove gray;
+    justify-content: space-between;
 }
 
 .avatarprofile {
@@ -52,9 +67,19 @@
     border-radius: 9999px;
 }
 
+.contenedoriconos {
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
 .contenedor_nuevochat {
     height: 270px;
-    width: 470px;
+    width: 500px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -71,26 +96,44 @@
 
 .cajachat > button {
     font-size: 30px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
-    color: white;
+    background-color: rgb(90, 32, 138);
+    color: whitesmoke;
 }
 
 .texto {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    
-    
-}
-.texto > p {
-    font-size: 26px;
+   display: flex;
+   flex-direction: column;
+   margin-top: 12px;
 }
 
 .texto > small {
-    font-size: 20px;
+    font-size: 25px;
+
+}
+
+h1 {
+    font-size: 26px;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 15px;
+}
+
+.textoprincipal > h1 {
+    font-size: 80px;
+}
+
+.textosecundario > p {
+    font-size: 35px;
+    text-align: center;
 }
